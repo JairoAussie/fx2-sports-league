@@ -16,5 +16,13 @@ class League
             team
         end
     end
+
+    def print_ladder
+        puts "Team \t W \t L"
+        sorted_array = @teams.sort_by{|team| team.wins}.reverse
+        sorted_array.each do |team|
+            team.print_team_table_view
+        end
+    end
 end
 

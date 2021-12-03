@@ -2,16 +2,15 @@ require "faker"
 
 require_relative("./team.rb")
 require_relative("./league.rb")
-require_relative("./team_member.rb")
+#require_relative("./team_member.rb")
 require_relative("./player.rb")
 require_relative("./coach.rb")
 require_relative("./staff.rb")
 
 def seed 
-
-    #create an array of players and add it to the team x3
-    #Create a coach object and add it to the team x3
-    #Create an array of members and add it to the team x3
+    #create an array of players and add it to the team x4
+    #Create a coach object and add it to the team x4
+    #Create an array of members and add it to the team x4
     team1_players = []
     team2_players = []
     team3_players = []
@@ -42,7 +41,7 @@ def seed
 
 
     team1 = Team.new("Kings", "Sydney", "Qudos Bank Arena", "yellow", team1_players, coach1, team1_staff)
-    team2 = Team.new("Taipans", "Cairns", "Cairns Pop-Up Arena", "orange", team2_players, coach2, team2_staff)
+    team2 = Team.new("Taipans", "Cairns", "Cairns Pop-Up Arena", "magenta", team2_players, coach2, team2_staff)
     team3 = Team.new("Bullets", "Brisbane", "Nissan Arena", "blue", team3_players, coach3, team3_staff)
     team4 = Team.new("Hawks", "Illawarra", "WIN Entertainment Centre", "red", team4_players, coach4, team4_staff)
 

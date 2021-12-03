@@ -36,7 +36,7 @@ class Team
     end
 
     def print_team_table_view
-        puts "#{@name} \t #{@wins} \t #{@losses}"
+        puts "#{@name}\t #{@wins} \t #{@losses}"
     end
 
     def win
